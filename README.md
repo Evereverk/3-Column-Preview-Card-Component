@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
-- Live Site URL: [Add live site URL here]
+- Solution URL: [https://github.com/Evereverk/3-Column-Preview-Card-Component.git]
+- Live Site URL: [https://3-column-preview-card-component-alpha-opal.vercel.app/]
 
 ## My process
 
