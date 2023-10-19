@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryBrightOrange: hsl(31, 77%, 52%);
+  --primaryDarkCyan: hsl(184, 100%, 22%);
+  --primaryVeryDarkCyan: hsl(179, 100%, 13%);
+  --neutralTransparentWhite: hsla(0, 0%, 100%, 0.75);
+  --neutralVeryLightGray: hsl(0, 0%, 95%);
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+body {
+  background-color: var(--neutralVeryLightGray);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+@media (min-width: 960px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+}
+.card {
+  display: grid;
+  margin: 1rem;
+  color: white;
+}
+@media (min-width: 960px) {
+  .card {
+    max-width: 57.5rem;
+    min-height: 31rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .box {
+    gap: 0;
+  }
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  gap: 2rem;
+}
+.sedans {
+  border-radius: 5px 5px 0 0;
+  background-color: var(--primaryBrightOrange);
+}
+.suvs {
+  background-color: var(--primaryDarkCyan);
+}
+.luxury {
+  border-radius: 0 0 5px 5px;
+  background-color: var(--primaryVeryDarkCyan);
+}
+@media (min-width: 960px) {
+  .sedans {
+    border-radius: 10px 0 0 10px;
+  }
+  .luxury {
+    border-radius: 0 10px 10px 0;
+  }
+  h2,
+  p {
+    margin-top: -70px;
+  }
+}
+.image-wrapper {
+  width: 30%;
+}
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+p {
+  line-height: 1.5rem;
+  color: var(--neutralTransparentWhite);
+}
+button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  background-color: white;
+  transition: 0.3s;
+}
+button:hover {
+  color: white;
+  border: 2px solid white;
+}
+.sedans-btn:hover {
+  background-color: var(--primaryBrightOrange);
+}
+.suvs-btn:hover {
+  background-color: var(--primaryDarkCyan);
+}
+.luxury-btn:hover {
+  background-color: var(--primaryVeryDarkCyan);
+}
